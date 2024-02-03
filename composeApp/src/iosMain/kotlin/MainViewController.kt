@@ -1,5 +1,7 @@
 import androidx.compose.ui.window.ComposeUIViewController
-import ui.HelloWorldView
 import ui.MainScreen
+import viewModel.MainViewModel
 
-fun MainViewController() = ComposeUIViewController { MainScreen() }
+fun MainViewController() = ComposeUIViewController {
+    MainScreen(viewModel = MainViewModel())
+}

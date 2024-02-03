@@ -1,4 +1,5 @@
 [versions]
+activityCompose = "1.3.0"
 agp = "8.1.4"
 android-compileSdk = "34"
 android-minSdk = "24"
@@ -8,14 +9,34 @@ androidx-appcompat = "1.6.1"
 androidx-constraintlayout = "2.1.4"
 androidx-core-ktx = "1.12.0"
 androidx-espresso-core = "3.5.1"
+androidx-lifecycle-lifecycleViewmodelKtx = "2.4.0"
+androidx-lifecycleViewmodelKtx = "2.3.1"
 androidx-material = "1.11.0"
 androidx-test-junit = "1.1.5"
 compose = "1.5.4"
 compose-plugin = "1.5.11"
+foundation = "1.6.0"
 junit = "4.13.2"
 kotlin = "1.9.21"
+kotlinxCoroutinesCore = "1.7.3"
+lifecycleViewmodelCompose = "1.0.0-alpha07"
+lifecycleViewmodelKtx = "2.7.0"
+material = "1.6.0"
+mvvmCore = "0.16.1"
+ui = "1.6.0"
+uiTooling = "1.0.5"
 
 [libraries]
+androidx-activity-compose-v130 = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-compose-v100alpha07 = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx-v231 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx-v240 = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle-lifecycleViewmodelKtx" }
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "material" }
+androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+androidx-ui-tooling-v105 = { module = "androidx.compose.ui:ui-tooling", version.ref = "uiTooling" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -28,6 +49,22 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+material = { module = "androidx.compose.material:material", version.ref = "material" }
+mvvm-compose = { module = "dev.icerock.moko:mvvm-compose", version.ref = "mvvmCore" }
+mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "mvvmCore" }
+mvvm-databinding = { module = "dev.icerock.moko:mvvm-databinding", version.ref = "mvvmCore" }
+mvvm-flow = { module = "dev.icerock.moko:mvvm-flow", version.ref = "mvvmCore" }
+mvvm-flow-compose = { module = "dev.icerock.moko:mvvm-flow-compose", version.ref = "mvvmCore" }
+mvvm-flow-resources = { module = "dev.icerock.moko:mvvm-flow-resources", version.ref = "mvvmCore" }
+mvvm-livedata = { module = "dev.icerock.moko:mvvm-livedata", version.ref = "mvvmCore" }
+mvvm-livedata-compose = { module = "dev.icerock.moko:mvvm-livedata-compose", version.ref = "mvvmCore" }
+mvvm-livedata-glide = { module = "dev.icerock.moko:mvvm-livedata-glide", version.ref = "mvvmCore" }
+mvvm-livedata-material = { module = "dev.icerock.moko:mvvm-livedata-material", version.ref = "mvvmCore" }
+mvvm-livedata-resources = { module = "dev.icerock.moko:mvvm-livedata-resources", version.ref = "mvvmCore" }
+mvvm-livedata-swiperefresh = { module = "dev.icerock.moko:mvvm-livedata-swiperefresh", version.ref = "mvvmCore" }
+mvvm-state = { module = "dev.icerock.moko:mvvm-state", version.ref = "mvvmCore" }
+mvvm-viewbinding = { module = "dev.icerock.moko:mvvm-viewbinding", version.ref = "mvvmCore" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

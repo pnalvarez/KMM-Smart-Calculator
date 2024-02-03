@@ -40,6 +40,18 @@ kotlin {
             implementation(compose.ui)
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
+            implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.mvvm.core)
+            implementation(libs.mvvm.flow) // api mvvm-core, CFlow for native and binding extensions
+            implementation(libs.mvvm.livedata) // api mvvm-core, LiveData and extensions
+            implementation(libs.mvvm.state) // api mvvm-livedata, ResourceState class and extensions
+            implementation(libs.mvvm.livedata.resources) // api mvvm-core, moko-resources, extensions for LiveData with moko-resources
+            implementation(libs.mvvm.flow.resources) // api mvvm-core, moko-resources, extensions for Flow with moko-resources
+
+            // compose multiplatform
+            implementation(libs.mvvm.compose) // api mvvm-core, getViewModel for Compose Multiplatform
+            implementation(libs.mvvm.flow.compose) // api mvvm-flow, binding extensions for Compose Multiplatform
+            implementation(libs.mvvm.livedata.compose) // api mvvm-livedata, binding extensions for Compose Multiplatform
         }
     }
 }
